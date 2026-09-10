@@ -26,22 +26,22 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "35585958")
+    API_HASH  = os.environ.get("API_HASH", "5c3e3e9cca5b0cf55845e0be1410f8b2")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8658223720:AAGx38v9-LEAFu2ag2bQINV7t6Vb9s5z5l4") 
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","pyro-botz")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://Maggie12:Deepta123@cluster0.g4syvio.mongodb.net/?appName=Cluster0")
  
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN       = [int(admin.strip()) for admin in re.split(r'[, ]+', os.environ.get('ADMIN', '')) if admin.strip().replace('-', '').isdigit()]
+    ADMIN       = [int(admin.strip()) for admin in re.split(r'[, ]+', os.environ.get('ADMIN', '5953067512 7197030791')) if admin.strip().replace('-', '').isdigit()]
     FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
     JOIN_CHANNEL = os.environ.get("JOIN_CHANNEL", "")
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
-    MAX_CONCURRENT_TRANSMISSIONS = int(os.environ.get("MAX_CONCURRENT_TRANSMISSIONS", "2")) # Set the maximum amount of concurrent transmissions (uploads & downloads).
+    MAX_CONCURRENT_TRANSMISSIONS = int(os.environ.get("MAX_CONCURRENT_TRANSMISSIONS", "100")) # Set the maximum amount of concurrent transmissions (uploads & downloads).
     
     # wes response configuration     
     WEB_SUPPORT = bool(os.environ.get("WEB_SUPPORT", "True"))
